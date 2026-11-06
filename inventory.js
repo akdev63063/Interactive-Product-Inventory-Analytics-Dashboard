@@ -172,3 +172,10 @@ const affordableProducts = inventory.filter(function(product) {
     return product.price < 200;
 
 });
+// : Create a formatted report using map()
+
+const productReport = inventory.map(function(product) {
+
+    return product.name.toUpperCase() + ": $" + product.price;
+
+});

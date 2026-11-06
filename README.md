@@ -121,6 +121,35 @@ Formatted Report List:
 ["LAPTOP: $800", "MOUSE: $25", "MONITOR: $150"]
 ```
 
+----Output----
+
+--- Complete Product Inventory ---
+
+Laptop | $800 | Premium
+Mouse | $25 | Budget
+Monitor | $150 | Standard
+Keyboard | $75 | Budget
+Smartphone | $600 | Premium
+Headphones | $120 | Standard
+Printer | $250 | Standard
+USB Drive | $15 | Budget
+Tablet | $300 | Standard
+
+======================================
+INVENTORY ANALYTICS
+======================================
+
+Total Products: 9
+Total Inventory Value: $2335
+
+Affordable Products (Below $200):
+
+- Mouse ($25)
+- Monitor ($150)
+- Keyboard ($75)
+- Headphones ($120)
+- USB Drive ($15)
+
 ## 📈 Financial Calculation
 
 The application also demonstrates discount and tax calculations.

@@ -203,5 +203,5 @@ console.log("\nFormatted Product Report:");
 console.log(productReport);
 
 console.log("\n======================================");
-console.log("       PROJECT COMPLETED");
+console.log("       PROJECT COMPLETED BY Akash");
 console.log("======================================");

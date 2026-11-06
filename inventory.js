@@ -167,4 +167,8 @@ const finalAmount = calculateFinalAmount(
     0.05
 );
 
+const affordableProducts = inventory.filter(function(product) {
 
+    return product.price < 200;
+
+});

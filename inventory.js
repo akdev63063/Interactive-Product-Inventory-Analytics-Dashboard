@@ -81,3 +81,18 @@ function getCategory(price) {
             return "Unknown";
     }
 }
+//4: Display all products using forEach()
+
+console.log("\n--- Complete Product Inventory ---");
+
+inventory.forEach(function(product) {
+
+    const category = getCategory(product.price);
+
+    console.log(
+        "Product: " + product.name +
+        " | Price: $" + product.price +
+        " | Category: " + category
+    );
+
+});

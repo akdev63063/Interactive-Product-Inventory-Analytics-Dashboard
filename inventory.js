@@ -133,3 +133,20 @@ if (searchInput !== null && searchInput.trim() !== "") {
 else {
     console.log("Search skipped.");
 }
+//Calculate total inventory value
+
+function calculateTotal(products) {
+
+    let total = 0;
+
+    for (let product of products) {
+        total = total + product.price;
+    }
+
+    return total;
+}
+
+const totalValue = calculateTotal(inventory);
+
+
+

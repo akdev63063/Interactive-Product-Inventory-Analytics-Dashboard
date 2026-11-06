@@ -179,3 +179,29 @@ const productReport = inventory.map(function(product) {
     return product.name.toUpperCase() + ": $" + product.price;
 
 });
+
+// Final: Display final analytics
+
+console.log("\n======================================");
+console.log("       INVENTORY ANALYTICS");
+console.log("======================================");
+
+console.log("Total Products: " + inventory.length);
+
+console.log("Total Inventory Value: $" + totalValue);
+
+console.log("Value After 10% Discount and 5% Tax: $" + finalAmount);
+
+console.log("\nAffordable Products (Below $200):");
+
+affordableProducts.forEach(function(product) {
+    console.log("- " + product.name + " ($" + product.price + ")");
+});
+
+console.log("\nFormatted Product Report:");
+
+console.log(productReport);
+
+console.log("\n======================================");
+console.log("       PROJECT COMPLETED");
+console.log("======================================");

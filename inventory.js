@@ -96,3 +96,40 @@ inventory.forEach(function(product) {
     );
 
 });
+
+//Search for a product using loops
+
+console.log("\n--- Search Product ---");
+
+const searchInput = prompt("Enter product name to search:");
+
+if (searchInput !== null && searchInput.trim() !== "") {
+
+    const searchName = searchInput.trim().toLowerCase();
+    let found = false;
+
+    for (let i = 0; i < inventory.length; i++) {
+
+        if (!inventory[i].name) {
+            continue;
+        }
+
+        if (inventory[i].name.toLowerCase() === searchName) {
+
+            console.log("Product Found!");
+            console.log("Name: " + inventory[i].name);
+            console.log("Price: $" + inventory[i].price);
+
+            found = true;
+            break;
+        }
+    }
+
+    if (found === false) {
+        console.log("Product not found.");
+    }
+
+}
+else {
+    console.log("Search skipped.");
+}

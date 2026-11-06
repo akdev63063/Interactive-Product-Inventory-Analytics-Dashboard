@@ -148,5 +148,23 @@ function calculateTotal(products) {
 
 const totalValue = calculateTotal(inventory);
 
+//7: Calculate discount and tax
+
+const calculateFinalAmount = (amount, discount, tax) => {
+
+    const discountAmount = amount * discount;
+    const afterDiscount = amount - discountAmount;
+
+    const taxAmount = afterDiscount * tax;
+    const finalAmount = afterDiscount + taxAmount;
+
+    return finalAmount.toFixed(2);
+};
+
+const finalAmount = calculateFinalAmount(
+    totalValue,
+    0.10,
+    0.05
+);
 
 

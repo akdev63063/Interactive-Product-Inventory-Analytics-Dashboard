@@ -50,3 +50,34 @@ else {
 
     console.log(newName + " added successfully!");
 }
+// Assign product categories
+
+function getCategory(price) {
+
+    let category;
+
+    if (price < 100) {
+        category = "Budget";
+    }
+    else if (price <= 500) {
+        category = "Standard";
+    }
+    else {
+        category = "Premium";
+    }
+
+    switch (category) {
+
+        case "Budget":
+            return "Budget";
+
+        case "Standard":
+            return "Standard";
+
+        case "Premium":
+            return "Premium";
+
+        default:
+            return "Unknown";
+    }
+}

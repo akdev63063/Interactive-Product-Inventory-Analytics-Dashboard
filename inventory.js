@@ -14,3 +14,39 @@ const inventory = [
     { id: 7, name: "Printer", price: 250 },
     { id: 8, name: "USB Drive", price: 15 }
 ];
+
+console.log("\n--- Add New Product ---");
+
+const productName = prompt("Enter product name:");
+const productPriceInput = prompt("Enter product price:");
+
+const newName = productName ? productName.trim() : "";
+const newPrice = Number(productPriceInput);
+
+if (productName === null || productPriceInput === null) {
+
+    console.log("Product addition cancelled.");
+
+}
+else if (newName === "") {
+
+    console.log("Product name cannot be empty.");
+
+}
+else if (productPriceInput.trim() === "" ||
+         !Number.isFinite(newPrice) ||
+         newPrice <= 0) {
+
+    console.log("Please enter a valid product price.");
+
+}
+else {
+
+    inventory.push({
+        id: inventory.length + 1,
+        name: newName,
+        price: newPrice
+    });
+
+    console.log(newName + " added successfully!");
+}
